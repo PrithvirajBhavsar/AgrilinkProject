@@ -11,10 +11,10 @@ required pre installed node.js and postman
     "userID":"1234570",
     "marketID":"4453234",
     "marketName":"Surat mandi",
-    "cmdtyID":"Hello",
+    "cmdtyID":"64464333",
     "cmdtyName":"Tomato",
     "priceUnit":"Quintal",
-    "convFctr":"15.25",
+    "convFctr":"100",
     "price":"1500"
 }
 9. make get request from postman to /reports with search params id.
