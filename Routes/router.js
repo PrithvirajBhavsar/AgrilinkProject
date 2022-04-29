@@ -3,6 +3,19 @@ const {default : Report} = require("../Schema/ReportSchema.js");
 const { check, validationResult } = require("express-validator");
 const router = express();
 
+// sample body
+
+// {
+//     "userID":"1234570",
+//     "marketID":"4453234",
+//     "marketName":"Surat mandi",
+//     "cmdtyID":"64464333",
+//     "cmdtyName":"Tomato",
+//     "priceUnit":"Quintal",
+//     "convFctr":"100",
+//     "price":"1500"
+// }
+
 router.post("/reports", [
     check("userID", "Invalid user id.").isLength({ min: 4, max: 30 }).trim(),
     check("marketID", "Invalid market id.").isLength({ min: 4, max: 30 }).trim(),
